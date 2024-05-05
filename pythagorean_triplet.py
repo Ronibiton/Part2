@@ -1,7 +1,7 @@
 import math
 
 
-def find_factors(c: int):
+def find_factors(c: int) -> []:
     factors = []
     factors_numbers = []
     for i in range(0, int(math.sqrt(c)) + 1):
@@ -15,7 +15,7 @@ def find_factors(c: int):
     return factors
 
 
-def collect_factors(sum: int):
+def collect_factors(sum: int) -> []:
     all_factors = []
     for i in range(0, int(sum * sum // 2)):
         factors_options = find_factors(i)
